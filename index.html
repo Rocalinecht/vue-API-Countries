@@ -17,11 +17,13 @@
         <h2>Table</h2>
         <table>
             <tr>
+                <th>Flag</th>
                 <th>Country</th>
                 <th>Capital</th>
                 <th>Population</th>
             </tr>
             <tr v-for="country in countries_list">
+                <td><img v-bind:src="country.flag" alt="Flag" height="26" width="42"> </td>
                 <td>{{country.name}}</td>
                 <td>{{country.capital}}</td>
                 <td>{{country.population}}</td>
