@@ -21,10 +21,10 @@
                 <th>Capital</th>
                 <th>Population</th>
             </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+            <tr v-for="country in countries_list">
+                <td>{{country.name}}</td>
+                <td>{{country.capital}}</td>
+                <td>{{country.population}}</td>
             </tr>
         </table>
     </div>
