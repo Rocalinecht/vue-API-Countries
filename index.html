@@ -28,6 +28,11 @@
                 <td>{{country.capital}}</td>
                 <td>{{country.population}}</td>
             </tr>
+            <tr v-if="countries_list.length == 0">
+                <td colspan="3">
+                    No records found.
+                </td>
+            </tr>
         </table>
     </div>
     <script src="vue.js"></script>
