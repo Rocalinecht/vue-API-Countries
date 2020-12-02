@@ -3,4 +3,11 @@ var app = new Vue({
     data: {
         countries_list: [],
     },
+    mounted() {
+        axios
+            .get('https://restcountries.eu/rest/v2/region/americas')
+            .then(response => (
+                console.log(response)
+                ))
+    }
 })
