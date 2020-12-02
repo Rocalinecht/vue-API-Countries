@@ -8,6 +8,9 @@ var app = new Vue({
             .get('https://restcountries.eu/rest/v2/all')
             .then(response => (
                 this.countries_list = response.data
-                ))
+            ))
+            .catch(error =>(
+                console.log(error)
+            ));    
     }
 })
