@@ -7,7 +7,7 @@ var app = new Vue({
         axios
             .get('https://restcountries.eu/rest/v2/region/americas')
             .then(response => (
-                console.log(response.data)
+                this.countries_list = response.data
                 ))
     }
 })
